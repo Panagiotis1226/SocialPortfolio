@@ -355,7 +355,8 @@ function initializeContactInteractions() {
 // Image Modal
 function initializeImageModal() {
     const modal = document.getElementById('imageModal');
-    const modalImage = modal?.querySelector('.modal-image');
+    const modalContent = modal?.querySelector('.modal-content');
+    const modalImageContainer = modal?.querySelector('.modal-image-container');
     const modalTitle = modal?.querySelector('.modal-title');
     const modalDescription = modal?.querySelector('.modal-description');
     const modalClose = modal?.querySelector('.modal-close');
@@ -365,13 +366,33 @@ function initializeImageModal() {
         btn.addEventListener('click', function(e) {
             e.stopPropagation();
             const portfolioItem = this.closest('.portfolio-item');
-            const imageSrc = this.getAttribute('data-image');
+            const mediaSrc = this.getAttribute('data-image');
             const title = portfolioItem.querySelector('.portfolio-info h3').textContent;
             const description = portfolioItem.querySelector('.portfolio-info p').textContent;
 
-            if (modal && modalImage && modalTitle && modalDescription) {
-                modalImage.src = imageSrc;
-                modalImage.alt = title;
+            if (modal && modalImageContainer && modalTitle && modalDescription) {
+                // Clear previous content
+                modalImageContainer.innerHTML = '';
+
+                if (mediaSrc.endsWith('.mp4') || mediaSrc.endsWith('.mov')) {
+                    const video = document.createElement('video');
+                    video.src = mediaSrc;
+                    video.controls = true;
+                    video.autoplay = true;
+                    video.loop = true;
+                    video.muted = true;
+                    video.playsinline = true;
+                    video.style.maxWidth = '100%';
+                    video.style.maxHeight = '80vh';
+                    modalImageContainer.appendChild(video);
+                } else {
+                    const img = document.createElement('img');
+                    img.src = mediaSrc;
+                    img.alt = title;
+                    img.className = 'modal-image';
+                    modalImageContainer.appendChild(img);
+                }
+
                 modalTitle.textContent = title;
                 modalDescription.textContent = description;
                 modal.classList.add('show');
