@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peter's Social Media Portfolio - Entertainment & Gaming Specialist</title>
+    <meta name="description" content="Professional social media portfolio showcasing creative designs for entertainment venues, arcades, and sports events.">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+</head>
+<body data-theme="dark">
+    <!-- Loading Screen -->
+    <div class="loading-screen">
+        <div class="loading-spinner"></div>
+        <p>Loading Portfolio...</p>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>Peter's Portfolio</h2>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#timeline" class="nav-link">Journey</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#portfolio" class="nav-link">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#testimonials" class="nav-link">Reviews</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#services" class="nav-link">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#faq" class="nav-link">FAQ</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="nav-controls">
+                <button class="theme-toggle" aria-label="Toggle theme">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div id="particles-js"></div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">Creative Social Media Specialist</h1>
+                <p class="hero-subtitle" id="typed-subtitle"></p>
+                <div class="hero-tags">
+                    <span class="tag">👨‍👩‍👧‍👦 Family Events</span>
+                    <span class="tag">🎉 Community Engagement</span>
+                    <span class="tag">🎮 Entertainment Marketing</span>
+                    <span class="tag">🎪 Local Business</span>
+                    <span class="tag">📱 Social Media</span>
+                    <span class="tag">🎨 Creative Design</span>
+                </div>
+                <div class="hero-buttons">
+                    <a href="#portfolio" class="cta-button primary">View My Work</a>
+                    <a href="#contact" class="cta-button secondary">Get In Touch</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="floating-elements">
+                    <div class="floating-card">
+                        <i class="fas fa-palette"></i>
+                        <span>Creative Design</span>
+                    </div>
+                    <div class="floating-card">
+                        <i class="fas fa-chart-line"></i>
+                        <span>Growth Analytics</span>
+                    </div>
+                    <div class="floating-card">
+                        <i class="fas fa-users"></i>
+                        <span>Community Building</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="about-description">
+                        I'm a passionate social media specialist who understands the importance of community and family values in business. 
+                        My experience in nightclub promotion has taught me how to create engaging content and build excitement around events. 
+                        I'm eager to apply these skills to help a family-owned arcade create memorable experiences for families, friends, and 
+                        the local community while respecting the personal touch that makes family businesses special.
+                    </p>
+                    <div class="skills">
+                        <h3>Core Competencies</h3>
+                        <div class="skills-progress">
+                            <div class="skill-bar">
+                                <div class="skill-info">
+                                    <span>Social Media Marketing</span>
+                                    <span class="skill-percentage">95%</span>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress-fill" data-width="95"></div>
+                                </div>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-info">
+                                    <span>Graphic Design</span>
+                                    <span class="skill-percentage">90%</span>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress-fill" data-width="90"></div>
+                                </div>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-info">
+                                    <span>Event Promotion</span>
+                                    <span class="skill-percentage">88%</span>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress-fill" data-width="88"></div>
+                                </div>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-info">
+                                    <span>Community Building</span>
+                                    <span class="skill-percentage">92%</span>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress-fill" data-width="92"></div>
+                                </div>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-info">
+                                    <span>Campaign Analytics</span>
+                                    <span class="skill-percentage">85%</span>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress-fill" data-width="85"></div>
+                                </div>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-info">
+                                    <span>Digital Content Creation</span>
+                                    <span class="skill-percentage">93%</span>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress-fill" data-width="93"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-item">
+                        <h3 class="counter" data-target="5">0</h3>
+                        <p>Portfolio Pieces</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3 class="counter" data-target="2">0</h3>
+                        <p>Years Experience</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3 class="counter" data-target="100">0</h3>
+                        <p>Dedication %</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3 class="counter" data-target="50">0</h3>
+                        <p>Events Promoted</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Timeline Section -->
+    <section id="timeline" class="timeline-section">
+        <div class="container">
+            <h2 class="section-title">My Journey</h2>
+            <p class="section-subtitle">From nightclub promotion to family entertainment</p>
+            
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">2023 - Present</div>
+                    <div class="timeline-content">
+                        <h3>Social Media Specialist</h3>
+                        <p>Focusing on entertainment venues and family-friendly businesses. Creating engaging content that builds community connections.</p>
+                        <div class="timeline-tags">
+                            <span class="timeline-tag">Family Events</span>
+                            <span class="timeline-tag">Community Building</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-date">2022 - 2023</div>
+                    <div class="timeline-content">
+                        <h3>Nightclub Event Promoter</h3>
+                        <p>Promoted events at La Porte and Le Lobby Bar. Learned the art of creating excitement and building anticipation through social media.</p>
+                        <div class="timeline-tags">
+                            <span class="timeline-tag">Event Marketing</span>
+                            <span class="timeline-tag">Social Media</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-date">2021 - 2022</div>
+                    <div class="timeline-content">
+                        <h3>Graphic Design & Content Creation</h3>
+                        <p>Developed skills in creating eye-catching flyers and promotional materials. Mastered the balance between creativity and clear messaging.</p>
+                        <div class="timeline-tags">
+                            <span class="timeline-tag">Graphic Design</span>
+                            <span class="timeline-tag">Brand Identity</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <h2 class="section-title">My Portfolio</h2>
+            <p class="section-subtitle">A showcase of promotional materials and social media content I've created</p>
+            
+            <div class="portfolio-filters">
+                <button class="filter-btn active" data-filter="all">All Work</button>
+                <button class="filter-btn" data-filter="nightclub">Nightclub Flyers</button>
+                <button class="filter-btn" data-filter="events">Bar Crawl Events</button>
+                <button class="filter-btn" data-filter="entertainment">Coming Soon</button>
+            </div>
+
+            <div class="portfolio-grid">
+                <!-- Portfolio Items - Actual work samples -->
+                <div class="portfolio-item" data-category="nightclub">
+                    <div class="portfolio-card">
+                        <div class="portfolio-image">
+                            <img src="SundayFlyer.png" alt="Le Lobby Bar Sunday Event" loading="lazy">
+                        </div>
+                        <div class="portfolio-info">
+                            <h3>Sunday Summer Event</h3>
+                            <p>Le Lobby Bar - Ladies Night with DJ JD & DJ ND</p>
+                            <button class="view-btn" data-image="SundayFlyer.png">
+                                <i class="fas fa-expand"></i> View Full Size
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="nightclub">
+                    <div class="portfolio-card">
+                        <div class="portfolio-image">
+                            <img src="SAMEDI.png" alt="La Porte Saturday Event" loading="lazy">
+                        </div>
+                        <div class="portfolio-info">
+                            <h3>Lit of Dance - Saturday</h3>
+                            <p>La Porte - Music by Arabika, Gabs Mendes & Ozey</p>
+                            <button class="view-btn" data-image="SAMEDI.png">
+                                <i class="fas fa-expand"></i> View Full Size
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="nightclub">
+                    <div class="portfolio-card">
+                        <div class="portfolio-image">
+                            <img src="VENDREDI.png" alt="La Porte Friday Event" loading="lazy">
+                        </div>
+                        <div class="portfolio-info">
+                            <h3>Flavourz Friday</h3>
+                            <p>La Porte - Kay B's Birthday Bash with Ridley, Jampi & Kay B</p>
+                            <button class="view-btn" data-image="VENDREDI.png">
+                                <i class="fas fa-expand"></i> View Full Size
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="nightclub">
+                    <div class="portfolio-card">
+                        <div class="portfolio-image">
+                            <video src="LaPorte.mov" controls loop muted playsinline poster="VENDREDI.png">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        <div class="portfolio-info">
+                            <h3>La Porte Event Video</h3>
+                            <p>Promotional video showcasing atmosphere at La Porte events</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="events">
+                    <div class="portfolio-card">
+                        <div class="portfolio-image">
+                            <img src="Banana1.png" alt="Banana Bar Crawl Event" loading="lazy">
+                        </div>
+                        <div class="portfolio-info">
+                            <h3>Banana Bar Crawl</h3>
+                            <p>Themed bar crawl event - Indoor venue execution</p>
+                            <button class="view-btn" data-image="Banana1.png">
+                                <i class="fas fa-expand"></i> View Full Size
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="events">
+                    <div class="portfolio-card">
+                        <div class="portfolio-image">
+                            <img src="Banana2.png" alt="Banana Bar Crawl Outdoor" loading="lazy">
+                        </div>
+                        <div class="portfolio-info">
+                            <h3>Banana Bar Crawl - Street</h3>
+                            <p>Themed bar crawl event - Outdoor group engagement</p>
+                            <button class="view-btn" data-image="Banana2.png">
+                                <i class="fas fa-expand"></i> View Full Size
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <h2 class="section-title">What Clients Say</h2>
+            <p class="section-subtitle">Feedback from venues and event organizers</p>
+            
+            <div class="testimonials-slider swiper">
+                <div class="swiper-wrapper">
+                    <div class="testimonial-slide swiper-slide">
+                        <div class="testimonial-content">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p>"Peter's promotional flyers significantly increased our event attendance. His understanding of nightlife culture and ability to create excitement is impressive."</p>
+                            <div class="testimonial-author">
+                                <div class="author-info">
+                                    <h4>La Porte Management</h4>
+                                    <span>Entertainment Venue</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-slide swiper-slide">
+                        <div class="testimonial-content">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p>"The bar crawl events Peter promoted were our most successful. His creative approach and attention to detail made all the difference."</p>
+                            <div class="testimonial-author">
+                                <div class="author-info">
+                                    <h4>Event Coordinator</h4>
+                                    <span>Banana Bar Crawl</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-slide swiper-slide">
+                        <div class="testimonial-content">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p>"Professional, creative, and reliable. Peter understands how to connect with the community and create content that resonates."</p>
+                            <div class="testimonial-author">
+                                <div class="author-info">
+                                    <h4>Le Lobby Bar</h4>
+                                    <span>Venue Owner</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title">Services</h2>
+            <p class="section-subtitle">Specialized social media solutions for entertainment venues</p>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h3>Flyer Design</h3>
+                    <p>Eye-catching promotional flyers for events, specials, and tournaments that drive attendance and engagement.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Custom design concepts</li>
+                        <li><i class="fas fa-check"></i> Print-ready formats</li>
+                        <li><i class="fas fa-check"></i> Social media optimized</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-share-alt"></i>
+                    </div>
+                    <h3>Social Media Management</h3>
+                    <p>Authentic social media presence that reflects your family values while building a loyal local community around your business.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Content strategy</li>
+                        <li><i class="fas fa-check"></i> Daily posting</li>
+                        <li><i class="fas fa-check"></i> Community engagement</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
+                    <h3>Event Promotion</h3>
+                    <p>Thoughtful promotional campaigns for family events, birthday parties, tournaments, and community gatherings that create lasting memories.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Multi-platform campaigns</li>
+                        <li><i class="fas fa-check"></i> Targeted advertising</li>
+                        <li><i class="fas fa-check"></i> Performance tracking</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-camera"></i>
+                    </div>
+                    <h3>Content Creation</h3>
+                    <p>Heartwarming photos and videos that capture the joy of families playing together and the welcoming atmosphere of your arcade.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Photography & videography</li>
+                        <li><i class="fas fa-check"></i> Story-driven content</li>
+                        <li><i class="fas fa-check"></i> Brand consistency</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Analytics & Growth</h3>
+                    <p>Data-driven insights to optimize your social media performance and maximize engagement with your target audience.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Performance reports</li>
+                        <li><i class="fas fa-check"></i> Growth strategies</li>
+                        <li><i class="fas fa-check"></i> ROI tracking</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Community Building</h3>
+                    <p>Building genuine relationships with local families and creating a sense of belonging that keeps customers coming back for generations.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Local partnerships</li>
+                        <li><i class="fas fa-check"></i> Customer loyalty programs</li>
+                        <li><i class="fas fa-check"></i> Community events</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="faq">
+        <div class="container">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <p class="section-subtitle">Everything you need to know about working with me</p>
+            
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What makes your approach different for family entertainment venues?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>My experience in nightclub promotion taught me how to create excitement and build anticipation, but I understand that family venues require a completely different approach. I focus on creating content that highlights the joy of family time, the safety of your environment, and the memories being made. It's about building trust with parents while exciting kids about the fun they'll have.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>How do you ensure content is appropriate for family audiences?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>I completely understand the shift from nightlife to family-friendly content. Every piece of content goes through a family-first filter - I ask myself "Would I be comfortable sharing this with my own family?" The tone, imagery, and messaging all reflect wholesome fun, safety, and community values.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What social media platforms do you recommend for arcades?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>For family entertainment venues, I typically recommend Facebook for reaching parents and building community, Instagram for visual content and younger audiences, and TikTok for fun, engaging videos that showcase the excitement of your games. Each platform serves a different purpose in building your community.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>How do you measure success for social media campaigns?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Success metrics include engagement rates, reach, website traffic, and most importantly - foot traffic to your venue. I track how social media posts translate to actual visits, birthday party bookings, and repeat customers. It's not just about likes; it's about building a loyal customer base.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Can you help with special events and birthday parties?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Absolutely! Special events and birthday parties are perfect opportunities for social media content. I can create promotional materials, document the events (with parent permission), and use the content to show other families the amazing experiences they could have at your venue.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What's your typical turnaround time for flyer designs?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>For standard promotional flyers, I typically deliver initial concepts within 2-3 business days, with final designs ready within a week. For rush projects or time-sensitive events, I can often accommodate faster turnarounds - just let me know your timeline and I'll work with you.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Let's Work Together</h2>
+            <p class="section-subtitle">Ready to elevate your venue's social media presence?</p>
+            
+            <div class="contact-content-simple">
+                <div class="contact-info-center">
+                    <h3>Get In Touch</h3>
+                    <p>I'm excited to discuss how my nightclub promotion experience can help elevate your arcade and entertainment venue through creative social media content.</p>
+                    
+                    <div class="contact-items">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div class="contact-details">
+                                <span class="contact-label">Email</span>
+                                <span class="contact-value">PeterNicolacacos@gmail.com</span>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fab fa-instagram"></i>
+                            <div class="contact-details">
+                                <span class="contact-label">Instagram</span>
+                                <span class="contact-value">@panagiotis_nikolakakos</span>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-clock"></i>
+                            <div class="contact-details">
+                                <span class="contact-label">Response Time</span>
+                                <span class="contact-value">Within 24 hours</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="social-links-large">
+                        <a href="mailto:PeterNicolacacos@gmail.com" class="social-link-large email">
+                            <i class="fas fa-envelope"></i>
+                            <span>Send Email</span>
+                        </a>
+                        <a href="https://instagram.com/panagiotis_nikolakakos" class="social-link-large instagram" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                            <span>Follow on Instagram</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Peter's Portfolio</h3>
+                    <p>Creating engaging social media experiences for entertainment venues and family businesses.</p>
+                    <div class="footer-social">
+                        <a href="mailto:PeterNicolacacos@gmail.com"><i class="fas fa-envelope"></i></a>
+                        <a href="https://instagram.com/panagiotis_nikolakakos" target="_blank"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#services">Flyer Design</a></li>
+                        <li><a href="#services">Social Media Management</a></li>
+                        <li><a href="#services">Event Promotion</a></li>
+                        <li><a href="#services">Content Creation</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#testimonials">Testimonials</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Peter's Social Media Portfolio. Designed for entertainment venue promotion.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Image Modal -->
+    <div class="modal" id="imageModal">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <div class="modal-image-container">
+                <img class="modal-image" src="" alt="">
+            </div>
+            <div class="modal-info">
+                <h3 class="modal-title"></h3>
+                <p class="modal-description"></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html> 
