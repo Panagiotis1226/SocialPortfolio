@@ -1,6 +1,7 @@
 // Global variables
 let isLoading = true;
-let testimonialSwiper = null;
+// Remove global variable
+// let testimonialSwiper = null;
 
 // DOM Content Loaded
 document.addEventListener('DOMContentLoaded', function() {
@@ -21,7 +22,6 @@ function initializeApp() {
     initializePortfolio();
     initializeAnimatedCounters();
     initializeSkillBars();
-    initializeTestimonials();
     initializeFAQ();
     initializeContactInteractions();
     initializeImageModal();
@@ -275,36 +275,7 @@ function initializeSkillBars() {
 }
 
 // Testimonials Slider
-function initializeTestimonials() {
-    if (typeof Swiper !== 'undefined') {
-        testimonialSwiper = new Swiper('.testimonials-slider', {
-            loop: true,
-            autoplay: {
-                delay: 5000,
-                disableOnInteraction: false,
-            },
-            pagination: {
-                el: '.swiper-pagination',
-                clickable: true,
-            },
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-            effect: 'slide',
-            speed: 800,
-            spaceBetween: 30,
-            breakpoints: {
-                768: {
-                    slidesPerView: 1,
-                },
-                1024: {
-                    slidesPerView: 1,
-                }
-            }
-        });
-    }
-}
+// Remove entire initializeTestimonials function
 
 // FAQ Accordion
 function initializeFAQ() {
@@ -747,15 +718,15 @@ function initializeTouchSupport() {
         distY = touch.clientY - startY;
         
         // Swipe detection for testimonials
-        if (Math.abs(distX) > Math.abs(distY) && Math.abs(distX) > threshold) {
-            if (testimonialSwiper) {
-                if (distX > 0) {
-                    testimonialSwiper.slidePrev();
-                } else {
-                    testimonialSwiper.slideNext();
-                }
-            }
-        }
+        // if (Math.abs(distX) > Math.abs(distY) && Math.abs(distX) > threshold) {
+        //     if (testimonialSwiper) {
+        //         if (distX > 0) {
+        //             testimonialSwiper.slidePrev();
+        //         } else {
+        //             testimonialSwiper.slideNext();
+        //         }
+        //     }
+        // }
         
         startX = startY = null;
     });
